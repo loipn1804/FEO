@@ -1,0 +1,354 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/AppScreenStyle"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:focusableInTouchMode="true" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/detail_addtoCart_cover"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/rlActionBar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/icon_height"
+            android:background="@drawable/feo_main_header_bg" >
+
+            <ImageView
+                android:id="@+id/detail_back"
+                android:layout_width="@dimen/icon_height"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/feo_ios_back_arrow" />
+
+            <RelativeLayout
+                android:id="@+id/detail_rl_cart"
+                android:layout_width="@dimen/icon_height"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="-5dp" >
+
+                <ImageView
+                    android:id="@+id/detail_cart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/feo_main_cart" />
+
+                <TextView
+                    android:id="@+id/main_tv_cart_count"
+                    android:layout_width="wrap_content"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    android:layout_height="20dp"
+                    android:minWidth="20dp"
+                    android:minHeight="20dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/bg_circle_count_cart"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="@color/white"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/detail_search"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="-5dp"
+                android:layout_toLeftOf="@id/detail_rl_cart"
+                android:adjustViewBounds="true"
+                android:src="@drawable/feo_main_search" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:adjustViewBounds="true"
+                android:src="@drawable/feo_main_title" />
+        </RelativeLayout>
+
+        <com.nirhart.parallaxscroll.views.ParallaxScrollView
+            android:id="@+id/flower_detail_paralax"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            app:parallax_factor="1.9" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp" >
+
+                        <ImageView
+                            android:id="@+id/flower_detail_img"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:adjustViewBounds="true" />
+
+                        <TextView
+                            android:id="@+id/view_item_tv_itemstatus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_margin="@dimen/short_distance_margin_padding"
+                            android:background="@drawable/feo_main_item_status_soldout"
+                            android:gravity="center_horizontal"
+                            android:singleLine="true"
+                            android:text="SOLD OUT"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/textsize_small"
+                            android:visibility="gone" />
+
+                        <TextView
+                            android:id="@+id/view_item_tv_codename"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_margin="@dimen/short_distance_margin_padding"
+                            android:background="#55555555"
+                            android:gravity="left|center_vertical"
+                            android:padding="@dimen/short_distance_margin_padding"
+                            android:singleLine="true"
+                            android:text="Code: "
+                            android:textColor="@color/white" />
+                    </RelativeLayout>
+
+                    <View style="@style/hor_lightgray_devider" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/background"
+                    android:orientation="vertical"
+                    android:padding="@dimen/average_distance_margin_padding" >
+
+                    <TextView
+                        android:id="@+id/detail_flower_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/short_distance_margin_padding"
+                        android:textSize="@dimen/title_text_size" />
+
+                    <TextView
+                        android:id="@+id/detail_update_on"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/short_distance_margin_padding"
+                        android:textSize="@dimen/title_text_size" />
+
+                    <TextView
+                        android:id="@+id/detail_country_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/short_distance_margin_padding"
+                        android:textSize="@dimen/title_text_size" />
+
+                    <TextView
+                        android:id="@+id/detail_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/short_distance_margin_padding"
+                        android:textColor="@color/gray_text"
+                        android:textSize="@dimen/title_text_size" />
+
+                    <View style="@style/hor_lightgray_devider" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            style="@style/Text_Title_Style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="@dimen/short_distance_margin_padding"
+                            android:gravity="right"
+                            android:text="Unit Price"
+                            android:textColor="@color/gray_text"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/flower_detail_tv_pricing"
+                            style="@style/Text_Title_Style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_margin="@dimen/short_distance_margin_padding"
+                            android:gravity="right"
+                            android:text="" />
+                    </RelativeLayout>
+
+                    <View style="@style/hor_lightgray_devider" />
+
+                    <ListView
+                        android:id="@+id/lvDiscount"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="none" >
+                    </ListView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/short_distance_margin_padding"
+                        android:background="@drawable/feo_ios_listview_bg"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/average_distance_margin_padding_sm"
+                        android:paddingLeft="@dimen/average_distance_margin_padding"
+                        android:paddingRight="@dimen/average_distance_margin_padding"
+                        android:paddingTop="@dimen/average_distance_margin_padding" >
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ellipsize="end"
+                                    android:gravity="left"
+                                    android:singleLine="true"
+                                    android:text="Color"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/textsize_normal" />
+
+                                <TextView
+                                    android:id="@+id/detail_choose_color"
+                                    android:layout_width="0dip"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:ellipsize="end"
+                                    android:gravity="right"
+                                    android:padding="@dimen/average_distance_margin_padding"
+                                    android:singleLine="true"
+                                    android:text="N/A"
+                                    android:textColor="@color/pink"
+                                    android:textSize="@dimen/textsize_normal" />
+
+                                <ImageView
+                                    android:layout_width="@dimen/textview_height"
+                                    android:layout_height="@dimen/textview_height"
+                                    android:src="@drawable/black_arrow" />
+                            </TableRow>
+
+                            <View
+                                android:id="@+id/flower_detail_v_devider"
+                                style="@style/hor_lightgray_devider" />
+
+                            <TableRow
+                                android:id="@+id/flower_detail_tbr_quantity"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:layout_width="0dip"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:ellipsize="end"
+                                    android:gravity="left"
+                                    android:singleLine="true"
+                                    android:text="Quantity"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/textsize_normal" />
+
+                                <EditText
+                                    android:id="@+id/edtQuantity"
+                                    android:layout_width="0dip"
+                                    android:layout_height="@dimen/edt_quantity"
+                                    android:layout_weight="1"
+                                    android:background="@null"
+                                    android:descendantFocusability="beforeDescendants"
+                                    android:focusableInTouchMode="true"
+                                    android:gravity="right|center_vertical"
+                                    android:inputType="number"
+                                    android:maxLength="5"
+                                    android:padding="@dimen/average_distance_margin_padding"
+                                    android:selectAllOnFocus="true"
+                                    android:text="0"
+                                    android:textSize="@dimen/textsize_normal" />
+
+                                <ImageView
+                                    android:layout_width="@dimen/textview_height"
+                                    android:layout_height="@dimen/textview_height"
+                                    android:layout_marginTop="2dp"
+                                    android:src="@drawable/black_arrow" />
+                            </TableRow>
+                        </TableLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </com.nirhart.parallaxscroll.views.ParallaxScrollView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/detail_addtoCart_cover"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="@dimen/average_distance_margin_padding" >
+
+        <ImageView
+            android:id="@+id/detail_addtoCart"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/add_to_cart"
+            android:scaleType="centerInside" />
+
+        <TextView
+            android:id="@+id/detail_total_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:paddingRight="@dimen/average_distance_margin_padding"
+            android:singleLine="true"
+            android:text="S$ 0.00"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_larger"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/detail_view_gray_layer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#88888888"
+        android:visibility="gone" />
+
+    <include layout="@layout/view_progressbar" />
+
+</RelativeLayout>

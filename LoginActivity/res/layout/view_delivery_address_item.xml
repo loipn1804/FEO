@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_current_address"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/tvDelivery"
+    android:layout_marginLeft="@dimen/long_short_distance_margin_padding"
+    android:layout_marginRight="@dimen/long_short_distance_margin_padding"
+    android:layout_marginTop="@dimen/long_short_distance_margin_padding"
+    android:background="@drawable/current_address_box_7"
+    android:minHeight="110dp"
+    android:paddingBottom="10dp" >
+
+    <RelativeLayout
+        android:id="@+id/addr_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/delivery_address"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/tv_delivery_address_h"
+            android:layout_marginLeft="@dimen/average_distance_margin_padding"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:paddingRight="40dp"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/orange" />
+
+        <ImageView
+            android:id="@+id/delivery_address_del"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/tv_delivery_address_h"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/short_distance_margin_padding"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/delivery_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/average_distance_margin_padding"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/delivery_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@id/delivery_edit"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/imv111"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/delivery_detail"
+        android:layout_marginLeft="@dimen/average_distance_margin_padding"
+        android:layout_marginTop="@dimen/average_distance_margin_padding"
+        android:src="@drawable/ic_outlet_111" />
+
+    <TextView
+        android:id="@+id/delivery_detail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addr_layout"
+        android:layout_toRightOf="@id/imv111"
+        android:maxLines="2"
+        android:paddingLeft="@dimen/average_distance_margin_padding"
+        android:paddingTop="@dimen/average_distance_margin_padding"
+        android:text="" />
+
+    <ImageView
+        android:id="@+id/imv222"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/delivery_contact"
+        android:layout_marginLeft="@dimen/average_distance_margin_padding"
+        android:layout_marginTop="@dimen/average_distance_margin_padding"
+        android:src="@drawable/ic_outlet_222" />
+
+    <TextView
+        android:id="@+id/delivery_contact"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/delivery_detail"
+        android:layout_below="@+id/delivery_detail"
+        android:layout_toRightOf="@id/imv222"
+        android:maxLines="2"
+        android:paddingLeft="@dimen/average_distance_margin_padding"
+        android:paddingTop="@dimen/average_distance_margin_padding"
+        android:text="" />
+
+</RelativeLayout>

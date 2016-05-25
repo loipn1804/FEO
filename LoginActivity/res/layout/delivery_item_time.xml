@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_date"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/delivery_time_h"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/tvTimes"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingBottom="@dimen/delivery_time_padding"
+        android:paddingTop="@dimen/delivery_time_padding"
+        android:text="2-12pm"
+        android:textSize="@dimen/textsize_extra_large" />
+
+</RelativeLayout>

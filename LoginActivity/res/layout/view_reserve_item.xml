@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/reserve_detail_cover"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_forecast_item"
+        android:padding="@dimen/short_distance_margin_padding" >
+
+        <ImageView
+            android:id="@+id/reserve_detail_img"
+            android:layout_width="@dimen/item_search_iv"
+            android:layout_height="@dimen/item_search_iv"
+            android:layout_margin="@dimen/short_distance_margin_padding"
+            android:scaleType="fitXY"
+             />
+
+        <RelativeLayout
+            android:id="@+id/reserve_detail_main"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/reserve_detail_img"
+            android:paddingLeft="@dimen/average_distance_margin_padding"
+            android:paddingRight="@dimen/average_distance_margin_padding">
+
+            <TextView
+                android:id="@+id/reserve_detail_name"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/order_detail_h"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textSize="@dimen/textsize_small"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/reserve_detail_color"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/order_detail_h"
+                android:layout_below="@id/reserve_detail_name"
+                android:gravity="center"
+                android:text="Colour:"
+                android:textSize="@dimen/textsize_small" />
+
+            <TextView
+                android:id="@+id/reserve_detail_request"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/order_detail_h"
+                android:layout_below="@id/reserve_detail_color"
+                android:drawableRight="@drawable/black_arrow_no_space"
+                android:ellipsize="end"
+                android:gravity="left|center_vertical"
+                android:singleLine="true"
+                android:text="Special Request:"
+                android:textColor="@color/red"
+                android:textSize="@dimen/textsize_small" />
+
+            <TextView
+                android:id="@+id/reserve_detail_count"
+                android:layout_width="@dimen/order_detail_count_w"
+                android:layout_height="@dimen/order_detail_h"
+                android:layout_below="@id/reserve_detail_request"
+                android:background="@drawable/item_bg"
+                android:gravity="center"
+                android:text="0 x S$ 0.00"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_small" />
+
+            <TextView
+                android:id="@+id/reserve_detail_price"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/order_detail_h"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/reserve_detail_request"
+                android:gravity="center"
+                android:text="S$ 0.00"
+                android:textColor="@color/orange"
+                android:textSize="@dimen/textsize_small"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/reserve_detail_delete"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/short_distance_margin_padding"
+        android:layout_marginTop="@dimen/short_distance_margin_padding"
+        android:background="@drawable/feo_ios_cart_page_cross_button"
+        android:visibility="gone" />
+
+</RelativeLayout>

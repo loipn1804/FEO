@@ -1,0 +1,119 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menu_frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/listview_item_bg"
+    android:gravity="top"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/llCart"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/slidingmenu_header"
+                android:background="@drawable/feo_main_header_bg" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Shopping Cart"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textsize_larger" />
+
+                <ImageView
+                    android:id="@+id/menu_right_trash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/shopping_trash" />
+
+                <ImageView
+                    android:id="@+id/menu_right_close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/feo_ios_back_arrow" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:background="@drawable/feo_ios_side_menu_side_menu_divider" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/menu_bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/right_menu_bot"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bg_right_order"
+            android:padding="@dimen/short_distance_margin_padding" >
+
+            <ImageButton
+                android:id="@+id/menu_order"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/slidingmenu_header"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/short_distance_margin_padding"
+                android:layout_marginLeft="@dimen/short_distance_margin_padding"
+                android:layout_marginRight="@dimen/short_distance_margin_padding"
+                android:background="@drawable/delivery_checkout"
+                android:scaleType="centerInside" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/menu_order"
+                android:layout_marginBottom="@dimen/short_distance_margin_padding"
+                android:layout_marginLeft="@dimen/short_distance_margin_padding"
+                android:text="Estimated total:"
+                android:textSize="@dimen/textsize_large" />
+
+            <TextView
+                android:id="@+id/menu_total"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/menu_order"
+                android:layout_marginBottom="@dimen/short_distance_margin_padding"
+                android:layout_marginRight="@dimen/short_distance_margin_padding"
+                android:gravity="right"
+                android:text="S$ 0.00"
+                android:textSize="@dimen/textsize_large"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/menu_no_item_in_cart"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="There are no items in your cart"
+            android:textSize="@dimen/textsize_large"
+            android:visibility="gone" />
+
+        <ListView
+            android:id="@+id/lvRightMenu"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/menu_bottom"
+            android:layout_below="@id/llCart"
+            android:divider="@drawable/line" >
+        </ListView>
+    </RelativeLayout>
+
+</FrameLayout>

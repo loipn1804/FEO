@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menu_shopby_category"
+    style="@style/Left_Menu_Text"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/left_slidingmenu_sub_h"
+    android:gravity="center_vertical"
+    android:padding="@dimen/average_distance_margin_padding"
+    android:text="Countries" >
+
+</TextView>

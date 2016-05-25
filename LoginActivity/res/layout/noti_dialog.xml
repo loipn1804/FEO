@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvNoti"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tv_dialog"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textsize_normal"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/red" />
+
+    <TextView
+        android:id="@+id/tvOkie"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/account_btn_height"
+        android:gravity="center"
+        android:text="OK"
+        android:textSize="@dimen/textsize_large"
+        android:textStyle="bold" />
+
+</LinearLayout>

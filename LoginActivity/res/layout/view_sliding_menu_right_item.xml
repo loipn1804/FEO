@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rightmenu_order_rl_cover"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/right_menu_iv" >
+
+        <ImageView
+            android:id="@+id/rightmenu_order_img"
+            android:layout_width="@dimen/right_menu_iv"
+            android:layout_height="@dimen/right_menu_iv"
+            android:scaleType="fitXY"/>
+
+        <RelativeLayout
+            android:id="@+id/rightmenu_order_main"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/rightmenu_order_img"
+            android:paddingLeft="@dimen/average_distance_margin_padding"
+            android:paddingRight="@dimen/average_distance_margin_padding" >
+
+            <TextView
+                android:id="@+id/rightmenu_order_name"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/right_menu_item_h"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/rightmenu_order_color"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/right_menu_item_h"
+                android:layout_below="@id/rightmenu_order_name"
+                android:gravity="center"
+                android:text="Colour:" />
+
+            <TextView
+                android:id="@+id/rightmenu_order_count"
+                android:layout_width="100dp"
+                android:layout_height="@dimen/right_menu_item_h"
+                android:layout_below="@id/rightmenu_order_color"
+                android:background="@drawable/item_bg"
+                android:gravity="center"
+                android:text="S$ 0.00 x 0"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_small" />
+
+            <TextView
+                android:id="@+id/rightmenu_order_price"
+                android:layout_width="@dimen/order_detail_count_w"
+                android:layout_height="@dimen/right_menu_item_h"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/rightmenu_order_color"
+                android:gravity="right|center_vertical"
+                android:text="S$ 0.00"
+                android:textColor="@color/orange"
+                android:textSize="@dimen/textsize_small"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/rightmenu_order_delete"
+        android:layout_width="@dimen/right_menu_del"
+        android:layout_height="@dimen/right_menu_iv"
+        android:layout_alignParentRight="true"
+        android:background="#55555555"
+        android:paddingLeft="@dimen/short_distance_margin_padding"
+        android:paddingRight="@dimen/short_distance_margin_padding"
+        android:scaleType="centerInside"
+        android:src="@drawable/right_menu_del"
+        android:visibility="visible" />
+
+</RelativeLayout>

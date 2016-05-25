@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/AppScreenStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_delivery_time"
+        android:orientation="vertical" >
+
+        <include layout="@layout/view_header" />
+
+        <GridView
+            android:id="@+id/gvHistoryList"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/average_distance_margin_padding"
+            android:background="@null"
+            android:gravity="center"
+            android:numColumns="2"
+            android:scrollbars="vertical"
+            android:stretchMode="columnWidth" >
+        </GridView>
+    </LinearLayout>
+
+    <include layout="@layout/view_progressbar" />
+
+</RelativeLayout>

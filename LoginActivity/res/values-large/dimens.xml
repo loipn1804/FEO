@@ -1,0 +1,104 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!--
+         Per the design guidelines, navigation drawers should be between 240dp and 320dp:
+         https://developer.android.com/design/patterns/navigation-drawer.html
+    -->
+    <dimen name="navigation_drawer_width">240dp</dimen>
+    <dimen name="very_short_distance_margin_padding">4dp</dimen>
+    <dimen name="short_distance_margin_padding">8dp</dimen>
+    <dimen name="average_distance_margin_padding">15dp</dimen>
+    <dimen name="average_distance_margin_padding_sm">10dp</dimen>
+    <dimen name="long_short_distance_margin_padding">20dp</dimen>
+    <dimen name="very_long_distance_margin_padding">30dp</dimen>
+    <dimen name="max_distance_margin_padding">30dp</dimen>
+    <dimen name="hint_text_size">14sp</dimen>
+    <dimen name="context_text_size">13sp</dimen>
+    <dimen name="title_text_size">14sp</dimen>
+    <dimen name="head_text_size">20sp</dimen>
+    <dimen name="menu_left_width">260dp</dimen>
+    <dimen name="account_btn_height">60dp</dimen>
+    <dimen name="shadow_width">15dp</dimen>
+    <dimen name="slidingmenu_with">270dp</dimen>
+    <dimen name="slidingmenu_offset">250dp</dimen>
+    <dimen name="sample_height">80dp</dimen>
+    <dimen name="edt_quantity">60dp</dimen>
+    <dimen name="tv_dialog">60dp</dimen>
+    <dimen name="img_width">180dp</dimen>
+    <dimen name="img_height_large">400dp</dimen>
+    <dimen name="img_height">250dp</dimen>
+    <dimen name="img_height_small">80dp</dimen>
+    <dimen name="icon_height">50dp</dimen>
+    <dimen name="icon_height_actionbar">34dp</dimen>
+    <dimen name="textview_height">20dp</dimen>
+    <dimen name="textview_height_tc">33dp</dimen>
+    <dimen name="textsize_x_large">35sp</dimen>
+    <dimen name="textsize_super_large">30sp</dimen>
+    <dimen name="textsize_extra_large">26sp</dimen>
+    <dimen name="textsize_larger">22sp</dimen>
+    <dimen name="textsize_large">20sp</dimen>
+    <dimen name="textsize_normal">17sp</dimen>
+    <dimen name="textsize_small">13sp</dimen>
+    <dimen name="textview_delivery_width">100dp</dimen>
+    <dimen name="layout_delivery_width">50dp</dimen>
+    <dimen name="textsize_delivery">23sp</dimen>
+    <dimen name="delivery_time_padding">12dp</dimen>
+    <dimen name="delivery_time_h">80dp</dimen>
+    <dimen name="forecast_textview_h">40dp</dimen>
+    <dimen name="forecast_iv_group">26dp</dimen>
+    <dimen name="address_add_iv">30dp</dimen>
+    <dimen name="address_add_h">130dp</dimen>
+    <dimen name="tv_height">50dp</dimen>
+    <dimen name="contact_h">40dp</dimen>
+    <dimen name="contact_w">150dp</dimen>
+    <dimen name="tv_delivery_address_h">30dp</dimen>
+    <dimen name="edt_address_h">200dp</dimen>
+    <dimen name="iv_flower_detail_h">220dp</dimen>
+    <dimen name="iv_home_bannerl_h">200dp</dimen>
+    <dimen name="banner_lightgray_h">3dp</dimen>
+    <dimen name="banner_viewpager_h">120dp</dimen>
+    <dimen name="banner_drapview">60dp</dimen>
+    <dimen name="header_h">50dp</dimen>
+    <dimen name="header_back">20dp</dimen>
+    <dimen name="header_title">200dp</dimen>
+    <dimen name="panel_title">40dp</dimen>
+    <dimen name="panel_iv_w">40dp</dimen>
+    <dimen name="pabel_margin_top">80dp</dimen>
+    <dimen name="item_detail_w">200dp</dimen>
+    <dimen name="item_search_iv">110dp</dimen>
+    <dimen name="order_detail_h">30dp</dimen>
+    <dimen name="order_detail_count_w">200dp</dimen>
+    <dimen name="order_detail_iv">50dp</dimen>
+    <dimen name="order_detail_time_address_h">60dp</dimen>
+    <dimen name="order_item_day_h">20dp</dimen>
+    <dimen name="order_arrow">90dp</dimen>
+    <dimen name="order_calendar_w">75dp</dimen>
+    <dimen name="order_calendar_h">110dp</dimen>
+    <dimen name="order_day_month">28dp</dimen>
+    <dimen name="order_item_name">26dp</dimen>
+    <dimen name="progressbar">100dp</dimen>
+    <dimen name="shipment_layout_h">90dp</dimen>
+    <dimen name="slidingmenu_header">50dp</dimen>
+    <dimen name="slidingmenu_padding_left">25dp</dimen>
+    <dimen name="slidingmenu_padding_left_x2">50dp</dimen>
+    <dimen name="slidingmenu_padding_left_x3">70dp</dimen>
+    <dimen name="slidingmenu_iv">40dp</dimen>
+    <dimen name="right_menu_iv">140dp</dimen>
+    <dimen name="right_menu_del">40dp</dimen>
+    <dimen name="right_menu_item_h">36dp</dimen>
+    <dimen name="right_menu_ic">35dp</dimen>
+    <dimen name="right_menu_bot">120dp</dimen>
+    <dimen name="popup_edittext">120dp</dimen>
+    <dimen name="login_padding">50dp</dimen>
+    <dimen name="home_item_padding">5dp</dimen>
+    <dimen name="delivery_time_padding_t">60dp</dimen>
+    <dimen name="account_margin_t">10dp</dimen>
+    <dimen name="left_slidingmenu_h">90dp</dimen>
+    <dimen name="left_slidingmenu_sub_h">70dp</dimen>
+
+    <integer name="num_grid_columns">3</integer>
+</resources>

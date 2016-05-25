@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/average_distance_margin_padding"
+    android:layout_marginRight="@dimen/average_distance_margin_padding"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_fore_item"
+        android:layout_width="fill_parent"
+        android:layout_height="54dp"
+        android:background="@drawable/dowload_bg"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/fore_item_cale"
+            android:layout_width="@dimen/forecast_iv_group"
+            android:layout_height="@dimen/forecast_iv_group"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/calendar" />
+
+        <TextView
+            android:id="@+id/fore_item_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/average_distance_margin_padding"
+            android:layout_toRightOf="@id/fore_item_cale"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+        <ImageView
+            android:id="@+id/fore_item_arrow"
+            android:layout_width="@dimen/forecast_iv_group"
+            android:layout_height="@dimen/forecast_iv_group"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/average_distance_margin_padding"
+            android:src="@drawable/down_arrow" />
+    </RelativeLayout>
+</LinearLayout>

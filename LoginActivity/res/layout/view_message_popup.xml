@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/short_distance_margin_padding"
+    android:background="@drawable/bg_main_banner"
+    android:gravity="center"
+    android:minWidth="1000dp"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/popup_title_cover"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#ffc000"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/popup_tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tv_height"
+            android:gravity="center"
+            android:text="Notice"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_large"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1.0px"
+            android:background="#ffdedede" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/popup_tv_message"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_margin="@dimen/long_short_distance_margin_padding"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="@dimen/average_distance_margin_padding"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textsize_extra_large" />
+
+    <ImageButton
+        android:id="@+id/popup_imb_yes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/short_distance_margin_padding"
+        android:layout_marginTop="@dimen/average_distance_margin_padding"
+        android:background="@drawable/ic_yes_button"
+        android:minHeight="50dp"
+        android:scaleType="centerInside" />
+
+</LinearLayout>

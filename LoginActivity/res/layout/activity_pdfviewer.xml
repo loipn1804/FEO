@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_delivery_time">
+
+    <WebView
+        android:id="@+id/wvTest"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/price_list_download" />
+
+    <ImageButton
+        android:id="@+id/price_list_download"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/feo_ios_save_it" />
+
+    <include layout="@layout/view_progressbar" />
+
+</RelativeLayout>

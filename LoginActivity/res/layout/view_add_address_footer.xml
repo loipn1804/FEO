@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_add_address"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/long_short_distance_margin_padding"
+    android:layout_marginRight="@dimen/long_short_distance_margin_padding"
+    android:layout_marginTop="@dimen/long_short_distance_margin_padding"
+    android:background="@drawable/current_address_box_7"
+    android:minHeight="110dp" >
+
+    <ImageView
+        android:id="@+id/delivery_add"
+        android:layout_width="@dimen/address_add_iv"
+        android:layout_height="@dimen/address_add_iv"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/average_distance_margin_padding"
+        android:src="@drawable/address_plus" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:paddingLeft="@dimen/average_distance_margin_padding"
+        android:paddingTop="@dimen/average_distance_margin_padding"
+        android:text="One time address" />
+
+</RelativeLayout>

@@ -1,0 +1,101 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/AppScreenStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <include layout="@layout/view_header" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/img_height"
+                android:background="@drawable/aboutus_img" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/average_distance_margin_padding"
+                android:paddingRight="@dimen/average_distance_margin_padding" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/average_distance_margin_padding"
+                    android:gravity="center"
+                    android:text="Far East Orchid Pte Ltd"
+                    android:textSize="@dimen/textsize_large" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/average_distance_margin_padding"
+                    android:gravity="center"
+                    android:text="557 Thomson Road Singapore 298181"
+                    android:textSize="@dimen/textsize_large" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/average_distance_margin_padding"
+                    android:gravity="center"
+                    android:text="The Beginning..."
+                    android:textSize="@dimen/textsize_normal" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/average_distance_margin_padding"
+                    android:gravity="center"
+                    android:text="@string/aboutus1"
+                    android:textSize="@dimen/textsize_small" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/average_distance_margin_padding"
+                    android:gravity="center"
+                    android:text="@string/aboutus2"
+                    android:textSize="@dimen/textsize_small" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/average_distance_margin_padding"
+                    android:gravity="center"
+                    android:text="Today..."
+                    android:textSize="@dimen/textsize_normal" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/average_distance_margin_padding"
+                    android:autoLink="web"
+                    android:gravity="center"
+                    android:text="@string/aboutus3"
+                    android:textSize="@dimen/textsize_small" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/average_distance_margin_padding"
+                    android:gravity="center"
+                    android:text="@string/aboutus4"
+                    android:textSize="@dimen/textsize_small" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

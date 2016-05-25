@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_fore_item_gv"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/forecast_textview_h"
+        android:layout_margin="3dp"
+        android:background="@drawable/forecast_item_bg"
+        android:drawableLeft="@drawable/left_icon_fore"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/textsize_normal" />
+
+</LinearLayout>

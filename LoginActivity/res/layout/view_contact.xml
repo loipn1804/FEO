@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/average_distance_margin_padding"
+    android:background="@drawable/bg_contact_info"
+    android:padding="@dimen/long_short_distance_margin_padding" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Enquiry"
+            android:textSize="@dimen/textsize_larger"
+            android:textStyle="italic" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/short_distance_margin_padding"
+            android:text="Name *"
+            android:textSize="@dimen/textsize_small" />
+
+        <EditText
+            android:id="@+id/contact_name"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/contact_h"
+            android:layout_marginTop="@dimen/short_distance_margin_padding"
+            android:singleLine="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/short_distance_margin_padding"
+            android:text="Email *"
+            android:textSize="@dimen/textsize_small" />
+
+        <EditText
+            android:id="@+id/contact_email"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/contact_h"
+            android:layout_marginTop="@dimen/short_distance_margin_padding"
+            android:singleLine="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/short_distance_margin_padding"
+            android:text="Contact No *"
+            android:textSize="@dimen/textsize_small" />
+
+        <EditText
+            android:id="@+id/contact_no"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/contact_h"
+            android:layout_marginTop="@dimen/short_distance_margin_padding"
+            android:inputType="number"
+            android:singleLine="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/short_distance_margin_padding"
+            android:text="Address"
+            android:textSize="@dimen/textsize_small" />
+
+        <EditText
+            android:id="@+id/contact_address"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/short_distance_margin_padding"
+            android:maxLines="6"
+            android:minHeight="@dimen/contact_h" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/short_distance_margin_padding"
+            android:inputType="number"
+            android:text="Postal Code"
+            android:textSize="@dimen/textsize_small" />
+
+        <EditText
+            android:id="@+id/contact_postal"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/contact_h"
+            android:layout_marginTop="@dimen/short_distance_margin_padding"
+            android:singleLine="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/short_distance_margin_padding"
+            android:text="Subject *"
+            android:textSize="@dimen/textsize_small" />
+
+        <Spinner
+            android:id="@+id/contact_spn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_spinner_contact"
+            android:gravity="center_vertical"
+            android:padding="@dimen/short_distance_margin_padding" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/short_distance_margin_padding"
+            android:inputType="number"
+            android:text="Order No."
+            android:textSize="@dimen/textsize_small" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/contact_order"
+                android:layout_width="@dimen/contact_w"
+                android:layout_height="@dimen/contact_h"
+                android:layout_marginTop="@dimen/short_distance_margin_padding"
+                android:singleLine="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/short_distance_margin_padding"
+                android:text="(If applicable)"
+                android:textSize="@dimen/textsize_small" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/short_distance_margin_padding"
+            android:text="Message *"
+            android:textSize="@dimen/textsize_small" />
+
+        <EditText
+            android:id="@+id/contact_mess"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/short_distance_margin_padding"
+            android:gravity="top"
+            android:maxLines="6"
+            android:minHeight="120dp" />
+
+        <Button
+            android:id="@+id/contact_send"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/short_distance_margin_padding"
+            android:background="@drawable/ic_submit_button"
+            android:gravity="center" />
+    </LinearLayout>
+
+</ScrollView>

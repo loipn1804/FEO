@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal"
+    android:padding="@dimen/short_distance_margin_padding">
+
+    <com.fareastorchid.view.UtilityCustomGridView
+        android:id="@+id/gv_forecast_detail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gv_bg"
+        android:numColumns="2"
+        android:stretchMode="columnWidth"></com.fareastorchid.view.UtilityCustomGridView>
+
+
+</RelativeLayout>

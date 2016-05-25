@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/hiddenPanel"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@null">
+
+    <ImageView
+        android:id="@+id/blur_iv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@null" />
+
+    <LinearLayout
+        android:id="@+id/panel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/pabel_margin_top"
+        android:background="#f8f1dd"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/panel_main"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/panel_sortby"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/very_long_distance_margin_padding"
+                android:paddingRight="@dimen/very_long_distance_margin_padding">
+
+                <TextView
+                    android:id="@+id/panel_sortby_sort"
+                    style="@style/Hidden_Panel_Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/panel_iv_w"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center_vertical"
+                    android:text="Sort by  "
+                    android:textColor="@color/gray_text" />
+
+                <TextView
+                    android:id="@+id/tvSort"
+                    style="@style/Hidden_Panel_Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/panel_iv_w"
+                    android:layout_toRightOf="@id/panel_sortby_sort"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/very_long_distance_margin_padding"
+                    android:text="Alphabetical" />
+
+                <ImageView
+                    android:layout_width="@dimen/panel_iv_w"
+                    android:layout_height="@dimen/panel_iv_w"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/orange_arrow" />
+            </RelativeLayout>
+
+            <View
+                style="@style/hor_lightgray_devider"
+                android:layout_below="@id/panel_sortby" />
+
+            <RelativeLayout
+                android:id="@+id/panel_filterby"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/panel_sortby"
+                android:paddingLeft="@dimen/very_long_distance_margin_padding"
+                android:paddingRight="@dimen/very_long_distance_margin_padding">
+
+                <TextView
+                    android:id="@+id/panel_filterby_sort"
+                    style="@style/Hidden_Panel_Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/panel_iv_w"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center_vertical"
+                    android:text="Filter by"
+                    android:textColor="@color/gray_text" />
+
+                <TextView
+                    android:id="@+id/tvFilter"
+                    style="@style/Hidden_Panel_Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/panel_iv_w"
+                    android:layout_toRightOf="@id/panel_filterby_sort"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/very_long_distance_margin_padding"
+                    android:text="All Categories" />
+
+                <ImageView
+                    android:layout_width="@dimen/panel_iv_w"
+                    android:layout_height="@dimen/panel_iv_w"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/orange_arrow" />
+            </RelativeLayout>
+
+            <View
+                style="@style/hor_lightgray_devider"
+                android:layout_below="@id/panel_filterby" />
+
+            <ListView
+                android:id="@+id/lv_catType"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#f8f1dd"
+                android:divider="@color/gray"
+                android:dividerHeight="1dp"
+                android:visibility="gone" />
+
+            <ListView
+                android:id="@+id/lv_sortBy"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#f8f1dd"
+                android:divider="@color/gray"
+                android:dividerHeight="1dp"
+                android:visibility="gone" />
+
+            <ListView
+                android:id="@+id/lv_subCate"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#f8f1dd"
+                android:divider="@color/gray"
+                android:dividerHeight="1dp"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

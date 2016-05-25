@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppBaseTheme" parent="android:Theme.Light"></style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme"></style>
+
+    <!-- Application theme. -->
+    <style name="AppScreenStyle">
+        <item name="android:background">@color/background</item>
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="LoginFormContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">16dp</item>
+    </style>
+
+    <style name="EdittextStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/average_distance_margin_padding</item>
+    </style>
+
+    <style name="hor_lightgray_devider">
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/gray</item>
+        <item name="android:layout_width">fill_parent</item>
+    </style>
+
+    <style name="ver_lightgray_devider">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:background">@color/gray</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+
+    <style name="SideMenuStyle">
+        <item name="android:background">@color/background1</item>
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_down</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!-- Animation for dialog box -->
+    <style name="DialogSlideAnim" parent="@android:style/Theme.Light.Panel">
+        <item name="android:windowAnimationStyle">@style/DialogAnimation</item>
+    </style>
+
+    <!-- Overwrite the ToggleButton style -->
+    <style name="Widget.Button.Toggle" parent="android:Widget">
+        <item name="android:textOn">""</item>
+        <item name="android:textOff">""</item>
+        <item name="android:disabledAlpha">?android:attr/disabledAlpha</item>
+    </style>
+
+    <style name="SettingsThemes" parent="@android:style/Theme.Light">
+        <item name="android:buttonStyleToggle">@style/Widget.Button.Toggle</item>
+    </style>
+
+    <style name="Hidden_Panel_Text">
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+    </style>
+
+    <style name="Left_Menu_Text">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+</resources>

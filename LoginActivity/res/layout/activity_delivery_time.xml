@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_delivery_time"
+    tools:ignore="MissingPrefix" >
+
+    <include
+        android:id="@+id/del_header"
+        layout="@layout/view_header" />
+
+    <LinearLayout
+        android:id="@+id/reserveTotalLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/header_bg"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/delivery_time_confirm"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/long_short_distance_margin_padding"
+            android:background="@drawable/confirm_del_times" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/reserveTotalLayout"
+        android:layout_below="@+id/del_header"
+        android:gravity="center" >
+
+        <RelativeLayout
+            android:id="@+id/delivery_time_rl_cover"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/average_distance_margin_padding" >
+
+            <View
+                android:id="@+id/delivery_time_view_divider1"
+                style="@style/hor_lightgray_devider"
+                android:layout_marginTop="40dp" />
+
+            <View
+                android:id="@+id/delivery_time_view_divider2"
+                style="@style/hor_lightgray_devider"
+                android:layout_marginTop="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <com.fareastorchid.wheel.WheelVerticalView
+                    android:id="@+id/day"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1" />
+
+                <com.fareastorchid.wheel.WheelVerticalView
+                    android:id="@+id/time"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

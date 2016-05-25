@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/short_distance_margin_padding"
+    android:paddingLeft="@dimen/long_short_distance_margin_padding"
+    android:paddingRight="@dimen/long_short_distance_margin_padding"
+    android:paddingTop="@dimen/short_distance_margin_padding">
+
+    <LinearLayout
+        android:id="@+id/rlShipment"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/shipment_layout_h"
+        android:layout_marginTop="@dimen/short_distance_margin_padding"
+        android:background="@drawable/bg_country_selection"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/country_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/short_distance_margin_padding"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textSize="@dimen/textsize_larger"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,490 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/AppScreenStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <include layout="@layout/view_header" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/short_distance_margin_padding" >
+
+            <LinearLayout
+                android:id="@+id/deliveryPolicy"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Our Delivery Policy"
+                    android:textSize="@dimen/textsize_large" />
+
+                <TextView
+                    android:id="@+id/tc7"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/textview_height_tc"
+                    android:layout_marginTop="@dimen/average_distance_margin_padding"
+                    android:background="@drawable/dowload_bg"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/average_distance_margin_padding"
+                    android:text="Limitation of Liability"
+                    android:textSize="@dimen/textsize_normal" />
+
+                <LinearLayout
+                    android:id="@+id/layout_tc7"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/average_distance_margin_padding"
+                        android:text="Far East Orchid Pte Ltd will not be liable for any damages arising directly or indirectly from the late delivery or non-delivery of orders under any of the following circumstances:" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/average_distance_margin_padding"
+                        android:text="1. The recipient was not present at the address given within the hours during which delivery was requested." />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/average_distance_margin_padding"
+                        android:text="2. Incorrect address was provided." />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/average_distance_margin_padding"
+                        android:text="3. No such person was at the given address." />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/average_distance_margin_padding"
+                        android:text="4. No valid contact number was provided for Far East Orchid Pte Ltd to reasonably attempt to contact the recipient to make delivery." />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/average_distance_margin_padding"
+                        android:text="5. The recipient refused to accept delivery." />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/average_distance_margin_padding"
+                        android:text="	In any event, and notwithstanding anything contained herein, Far East Orchid Pte Ltd’s liability in contract, tort (including negligence or breach of statutory duty) or otherwise howsoever, and whatever the cause thereof, 	arising by reason of or in connection with the sales and purchase order (except in relation to death or personal injury caused to the customer by the wilful act or gross negligence of Far East Orchid Pte Ltd or its employees while acting in the course of their employment) shall be limited to the Purchase Price." />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/average_distance_margin_padding"
+                        android:text="The customer shall not seek from Far East Orchid Pte Ltd the loss of profits, contracts, revenue or business; or indirect, consequential, incidental, special, exemplary and/or punitive damages arising out of or relating to the sales and purchase order." />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/average_distance_margin_padding"
+                        android:text="Although we will always do our best to deliver on the date requested. There will be occasions when this is not possible due to circumstances beyond our control, such as adverse weather conditions and abnormal traffic conditions." />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tc1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/textview_height_tc"
+                    android:layout_marginTop="@dimen/average_distance_margin_padding"
+                    android:background="@drawable/dowload_bg"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/average_distance_margin_padding"
+                    android:text="General Orders"
+                    android:textSize="@dimen/textsize_normal" />
+
+                <LinearLayout
+                    android:id="@+id/layout_tc1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/average_distance_margin_padding"
+                        android:text="Delivery within Singapore is chargeable at S$4.80 or $6.50 (subject to prevailing GST per trip (refer to table below)." />
+
+                    <ImageView
+                        android:id="@+id/tc_delivery_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/average_distance_margin_padding"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/general_orders_photo_info" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/average_distance_margin_padding"
+                        android:text="When placing your order(s), please specify the date on which your order(s) is/are to be delivered. Orders received before 12pm can be sent before 5pm on the same day (Monday to Friday), Orders received before 10am on Saturday can be sent before 2pm on the Saturday." />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/average_distance_margin_padding"
+                        android:text="All orders received after 12pm (Monday – Friday) or 10am (Saturday) will be processed next working day." />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/average_distance_margin_padding"
+                        android:text="*Please note that the delivery fee are exclusive to members only. " />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tc2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/textview_height_tc"
+                    android:layout_marginTop="@dimen/average_distance_margin_padding"
+                    android:background="@drawable/dowload_bg"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/average_distance_margin_padding"
+                    android:text="Redelivery and Redirection Charges"
+                    android:textSize="@dimen/textsize_normal" />
+
+                <TextView
+                    android:id="@+id/layout_tc2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/average_distance_margin_padding"
+                    android:text="For redelivery and redirection of orders, they will be regarded as a new trip, and delivery is chargeable at the full rate."
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tc3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/textview_height_tc"
+                    android:layout_marginTop="@dimen/average_distance_margin_padding"
+                    android:background="@drawable/dowload_bg"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/average_distance_margin_padding"
+                    android:text="No Delivery to Restricted Areas"
+                    android:textSize="@dimen/textsize_normal" />
+
+                <LinearLayout
+                    android:id="@+id/layout_tc3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/average_distance_margin_padding"
+                        android:text="Kindly note that there will be no delivery for the following areas:" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/average_distance_margin_padding"
+                        android:background="@drawable/table2" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/average_distance_margin_padding"
+                        android:text="*Delivery to Sentosa is subject to approval." />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tc4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/textview_height_tc"
+                    android:layout_marginTop="@dimen/average_distance_margin_padding"
+                    android:background="@drawable/dowload_bg"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/average_distance_margin_padding"
+                    android:text="*PEAK-PERIOD "
+                    android:textSize="@dimen/textsize_normal" />
+
+                <LinearLayout
+                    android:id="@+id/layout_tc4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/average_distance_margin_padding"
+                        android:text="•	2 weeks before and up till first day of Chinese New Year" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/average_distance_margin_padding"
+                        android:text="•	9/2 till 13/2 (Valentine’s Day)" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/average_distance_margin_padding"
+                        android:text="•	21/12 till 24/12 (Christmas)" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/average_distance_margin_padding"
+                        android:text="*Please note that during the Peak Periods, deliveries might take longer than usual."
+                        android:textSize="@dimen/textsize_normal" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tc12"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/textview_height_tc"
+                android:layout_marginTop="@dimen/average_distance_margin_padding"
+                android:background="@drawable/dowload_bg"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/average_distance_margin_padding"
+                android:singleLine="true"
+                android:text="Our Return &amp; Exchange Policy"
+                android:textSize="@dimen/textsize_normal" />
+
+            <LinearLayout
+                android:id="@+id/layout_tc12"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/average_distance_margin_padding"
+                    android:text="Our Return &amp; Exchange Policy"
+                    android:textSize="@dimen/textsize_large"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/average_distance_margin_padding"
+                    android:autoLink="email"
+                    android:text="At Far East Orchid Pte Ltd, we would like to guarantee the products you purchased from us is to your satisfactory. We hope you never receive a damaged, faulty or incorrect item from us, but if you do, please email us at mobile@fareastorchid.com." />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tc5"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/textview_height_tc"
+                android:layout_marginTop="@dimen/average_distance_margin_padding"
+                android:background="@drawable/dowload_bg"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/average_distance_margin_padding"
+                android:singleLine="true"
+                android:text="Perishable Products (Flowers, Leaves or Foliages)"
+                android:textSize="@dimen/textsize_normal" />
+
+            <LinearLayout
+                android:id="@+id/layout_tc5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/average_distance_margin_padding"
+                    android:text="Perishable products are non-refundable items and hence no refund and exchange will be allowed once delivery has been accepted. " />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/average_distance_margin_padding"
+                    android:text="Disclaimer: Customer, who wished to have their purchases left outside your stipulated delivery points,should note that Far East Orchid Pte Ltd shall not be held responsible for any damage or missing items 	after the delivery has been made." />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tc6"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/textview_height_tc"
+                android:layout_marginTop="@dimen/average_distance_margin_padding"
+                android:background="@drawable/dowload_bg"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/average_distance_margin_padding"
+                android:singleLine="true"
+                android:text="Non-Perishable Products (Flora Accessories)"
+                android:textSize="@dimen/textsize_normal" />
+
+            <LinearLayout
+                android:id="@+id/layout_tc6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/average_distance_margin_padding"
+                    android:text="For non-perishable products, please bring the item back to us at our floral wholesale centre 557 Thomson Road Singapore 298181 within 7 days on your receipt of purchase." />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/average_distance_margin_padding"
+                    android:text="We will either do a 1 to 1 exchange or replace the product with an equivalent value if the item is out of stock as long as the product is returned in its original packaging and re-saleable condition." />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tc8"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/textview_height_tc"
+                android:layout_marginTop="@dimen/average_distance_margin_padding"
+                android:background="@drawable/dowload_bg"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/average_distance_margin_padding"
+                android:text="Payment Method"
+                android:textSize="@dimen/textsize_normal" />
+
+            <TextView
+                android:id="@+id/layout_tc8"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/average_distance_margin_padding"
+                android:text="All traders will follow accordingly to their respective mode of payment terms with Far East Orchid Pte Ltd. (cash, cheque &amp; terms etc.)."
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tc9"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/textview_height_tc"
+                android:layout_marginTop="@dimen/average_distance_margin_padding"
+                android:background="@drawable/dowload_bg"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/average_distance_margin_padding"
+                android:text="Availability of Product"
+                android:textSize="@dimen/textsize_normal" />
+
+            <TextView
+                android:id="@+id/layout_tc9"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/average_distance_margin_padding"
+                android:text="We will endeavour only to offer products which we expect to have in stock and available for ordering, but all items are subject to availability. Should a specific variety not be available at the time of delivery, or if items are of unsuitable quality to send, we will contact the customers to provide alternative options for substitution."
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tc10"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/textview_height_tc"
+                android:layout_marginTop="@dimen/average_distance_margin_padding"
+                android:background="@drawable/dowload_bg"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/average_distance_margin_padding"
+                android:text="Privacy Policy Pledge "
+                android:textSize="@dimen/textsize_normal" />
+
+            <LinearLayout
+                android:id="@+id/layout_tc10"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/average_distance_margin_padding"
+                    android:text="The goal of Far East Orchid Pte Ltd is to constantly provide quality goods and excellent customer service. As such, we gather personal information (in the registration form) so as to allow us to serve you better." />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/average_distance_margin_padding"
+                    android:text="All data is collected by lawful and fair means and with the knowledge and consent of customers. Data is gathered solely through customers&apos; voluntary via mobile application or filling in of forms at the shop front. Far East Orchid Pte Ltd assures users that confidentiality of customers&apos; data is maintained and protected." />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/average_distance_margin_padding"
+                    android:text="Personal information is kept solely for sales transactions, internal marketing and billing purposes. Customers&apos; consent will be sought if information is to be used for purposes other than completing sales transactions, internal marketing &amp; billing, either by Far East Orchid Pte Ltd or any Third Party working with us in any business collaborations." />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tc11"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/textview_height_tc"
+                android:layout_marginTop="@dimen/average_distance_margin_padding"
+                android:background="@drawable/dowload_bg"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/average_distance_margin_padding"
+                android:text="Your consent to our policy "
+                android:textSize="@dimen/textsize_normal" />
+
+            <LinearLayout
+                android:id="@+id/layout_tc11"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/average_distance_margin_padding"
+                    android:text="At Far East Orchid Pte Ltd, we do not disclose any of our customers&apos; email addresses or information to other parties without prior consent of our customers." />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/average_distance_margin_padding"
+                    android:autoLink="email"
+                    android:text="At Far East Orchid Pte Ltd, the customers&apos; particulars are solely for the purposes of completing sales transactions. We are committed to maintain and protect the confidentiality of customers&apos; personal data. Customers&apos; particulars are for the purposes of completing sales transactions, internal marketing and billing. The customers&apos; particulars will be retained for the convenience of customers&apos; future transactions. Should you need us to remove your information, please email us at mobile@fareastorchid.com with the subject header Remove." />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/average_distance_margin_padding"
+                    android:text="We also endeavour to keep up-to-date policies and procedures to protect personal data." />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/average_distance_margin_padding"
+                    android:text="*All prices shown are for today only." />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/short_distance_margin_padding"
+                    android:layout_marginTop="@dimen/average_distance_margin_padding"
+                    android:text="*For advance orders, prices may be subject to change accordingly." />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

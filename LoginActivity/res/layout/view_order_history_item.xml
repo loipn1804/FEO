@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/historyLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginRight="@dimen/long_short_distance_margin_padding"
+    android:layout_marginLeft="@dimen/long_short_distance_margin_padding"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/order_arrow"
+        android:layout_marginTop="@dimen/short_distance_margin_padding"
+        android:background="@drawable/feo_ios_foecast_date_date_rect" >
+
+        <LinearLayout
+            android:id="@+id/history_calendar"
+            android:layout_width="@dimen/order_calendar_w"
+            android:layout_height="@dimen/order_calendar_h"
+            android:layout_margin="@dimen/short_distance_margin_padding"
+            android:background="@drawable/feo_ios_foecast_date_calendar"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/history_detail_year"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/order_item_day_h"
+                android:gravity="center"
+                android:textColor="@color/gray_light_bg"
+                android:textSize="@dimen/textsize_normal"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/history_detail_day"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/order_day_month"
+                android:gravity="center"
+                android:textSize="@dimen/textsize_larger" />
+
+            <TextView
+                android:id="@+id/history_detail_month"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/order_day_month"
+                android:gravity="center"
+                android:textSize="@dimen/textsize_large" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/order_calendar_h"
+            android:layout_toLeftOf="@+id/history_arrow"
+            android:layout_toRightOf="@id/history_calendar"
+            android:orientation="vertical"
+            android:paddingLeft="3dp" >
+
+            <TextView
+                android:id="@+id/historyNo"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/order_item_day_h"
+                android:layout_gravity="left"
+                android:gravity="center"
+                android:textStyle="italic" />
+
+            <TextView
+                android:id="@+id/historyName"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/order_item_name"
+                android:layout_gravity="left"
+                android:gravity="center"
+                android:textColor="@color/orange"
+                android:textSize="@dimen/textsize_normal" />
+
+            <TextView
+                android:id="@+id/historyTimeSlot"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/order_item_day_h"
+                android:layout_gravity="left"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="Timeslot: "
+                android:textSize="@dimen/textsize_small" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/order_item_name" >
+
+                <TextView
+                    android:id="@+id/amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="Total Amount: "
+                    android:textSize="@dimen/textsize_small" />
+
+                <TextView
+                    android:id="@+id/historyAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/amount"
+                    android:gravity="top"
+                    android:text="S$ 0.00"
+                    android:textColor="@color/red"
+                    android:textSize="@dimen/textsize_small"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/history_arrow"
+            android:layout_width="30dp"
+            android:layout_height="@dimen/order_arrow"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/ic_item_right_corner" />
+    </RelativeLayout>
+
+</LinearLayout>

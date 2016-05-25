@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Basic Color -->
+    <color name="pink">#ee7584</color>
+    <color name="fray">#c3c3c3</color>
+    <color name="yellow">#ffffe1</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="light_blue">#70b5eb</color>
+    <color name="light_orange">#ff677e</color>
+    <color name="light_purple">#d1a5d8</color>
+    <color name="blue">#6f85f8</color>
+    <color name="green">#32af00</color>
+    <color name="light_green">#80fde0</color>
+    <color name="orange">#f26522</color>
+    <color name="red">#FF0000</color>
+    <color name="violet">#c073e0</color>
+    <color name="violet_light">#ca94e0</color>
+    <color name="blue_twitte">#ff55acee</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparent_gray">#22222222</color>
+    <color name="default_twitter_banner_color">#4A83B1</color>
+    <color name="pollOptionPressBackgroundColor">#ff00b5ff</color>
+    <color name="orange_actionbar">#edb931</color>
+
+    <!-- More -->
+    <color name="gray_light_bg">#f0efef</color>
+    <color name="green_dark">#328d32</color>
+    <color name="orage_light">#fb9032</color>
+    <color name="gray_text">#858585</color>
+    <color name="blue_btn">#66b5d6</color>
+    <color name="green_btn">#b5cf68</color>
+    <color name="blue_dark_btn">#014589</color>
+
+    <!-- Gallery -->
+    <color name="holo_blue_bright">#ff00ddff</color>
+    <color name="menu_bg">#101F2D</color>
+    <color name="light_gray">#AA808080</color>
+    <color name="gray">#dddddd</color>
+    <color name="tab_bg">#142029</color>
+    <color name="bg_light_blue">#EBF5FF</color>
+    <color name="light_black">#CC000000</color>
+    <color name="light_black_AA">#AA000000</color>
+    <color name="light_black_">#33000000</color>
+    <color name="light_white_">#33FFFFFF</color>
+    <color name="dialog_bg">#f0f0f0</color>
+
+    <drawable name="light_black_">#33000000</drawable>
+
+    <color name="Light_Blue">#70b5eb</color>
+    <color name="Light_Green">#80fde0</color>
+    <color name="linkOptionsColor">#ffebebeb</color>
+    <color name="button_orange">#fffc8101</color>
+    <color name="button_orange_active">#ffda7001</color>
+    <color name="color_preloader_end">#ffff0000</color>
+    <color name="header_bg">#febb12</color>
+    <color name="listview_item_bg">#f3e5bd</color>
+    <color name="background">#ece7d6</color>
+    <color name="background1">#f3e5bd</color>
+
+</resources>

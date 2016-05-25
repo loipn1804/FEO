@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/AppScreenStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <include layout="@layout/view_header" />
+
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <WebView
+                    android:id="@+id/contact_wv"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/img_height_large" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="@dimen/short_distance_margin_padding" >
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/average_distance_margin_padding"
+                        android:gravity="center_horizontal"
+                        android:text="Far East Orchid Pte Ltd"
+                        android:textSize="@dimen/textsize_extra_large"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/short_distance_margin_padding"
+                        android:gravity="center_horizontal"
+                        android:text="557 Thomson Road Singapore 298181"
+                        android:textSize="@dimen/textsize_small" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/average_distance_margin_padding"
+                        android:background="@drawable/bg_contact_info"
+                        android:orientation="vertical"
+                        android:padding="@dimen/short_distance_margin_padding" >
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="Contact Us Today"
+                            android:textSize="@dimen/textsize_extra_large" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/short_distance_margin_padding"
+                            android:text="Phone:	+65 6251 5151"
+                            android:textSize="@dimen/textsize_small" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/short_distance_margin_padding"
+                            android:text="Fax:	+65 6252 9318"
+                            android:textSize="@dimen/textsize_small" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/short_distance_margin_padding"
+                            android:autoLink="email"
+                            android:text="Email:	mobile@fareastorchid.com"
+                            android:textSize="@dimen/textsize_small" >
+                        </TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/average_distance_margin_padding"
+                        android:background="@drawable/bg_contact_info"
+                        android:orientation="vertical"
+                        android:padding="@dimen/short_distance_margin_padding" >
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:text="Operating Hours"
+                            android:textSize="@dimen/textsize_extra_large" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/average_distance_margin_padding"
+                            android:gravity="left"
+                            android:text="Office"
+                            android:textSize="@dimen/textsize_large" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/short_distance_margin_padding"
+                            android:text="Monday to Friday : 7.30 am - 2.00 pm"
+                            android:textSize="@dimen/textsize_small" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/short_distance_margin_padding"
+                            android:text="Saturday              : 7.30 am - 12.00 pm"
+                            android:textSize="@dimen/textsize_small" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/short_distance_margin_padding"
+                            android:text="Closed on Sunday and Public Holidays"
+                            android:textSize="@dimen/textsize_small" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/average_distance_margin_padding"
+                            android:gravity="left"
+                            android:text="Retail"
+                            android:textSize="@dimen/textsize_larger"
+                            android:textStyle="italic" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/short_distance_margin_padding"
+                            android:text="Monday to Saturday          : 8.00 am - 9.00 pm"
+                            android:textSize="@dimen/textsize_small" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/short_distance_margin_padding"
+                            android:text="Sunday and Public Holiday : 9.00 am - 7.00 pm"
+                            android:textSize="@dimen/textsize_small" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/short_distance_margin_padding"
+                            android:text="Closed on Sunday and Public Holidays"
+                            android:textSize="@dimen/textsize_small"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/average_distance_margin_padding"
+                        android:background="@drawable/bg_contact_info"
+                        android:orientation="vertical"
+                        android:padding="@dimen/short_distance_margin_padding" >
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/average_distance_margin_padding"
+                            android:gravity="center_horizontal"
+                            android:text="Directions"
+                            android:textSize="@dimen/textsize_larger" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/short_distance_margin_padding"
+                            android:text="By Bus:"
+                            android:textSize="@dimen/textsize_small" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/short_distance_margin_padding"
+                            android:text="54,130,132,156,162,162M,166,167,851,980"
+                            android:textSize="@dimen/textsize_small" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/short_distance_margin_padding"
+                            android:text="Nearest MRT Station:"
+                            android:textSize="@dimen/textsize_small" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/short_distance_margin_padding"
+                            android:text="CC17, Caldecott MRT"
+                            android:textSize="@dimen/textsize_small" />
+                    </LinearLayout>
+
+                    <include layout="@layout/view_contact" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <include layout="@layout/view_progressbar" />
+
+</RelativeLayout>

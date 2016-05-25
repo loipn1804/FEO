@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_date"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/layout_del_time"
+        android:layout_width="@dimen/layout_delivery_width"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/del_date_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9"
+            android:textSize="@dimen/textsize_super_large" />
+
+        <TextView
+            android:id="@+id/del_date_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/del_date_day"
+            android:text="DEC"
+            android:textColor="@color/gray_text"
+            android:textSize="@dimen/textsize_delivery" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/del_week"
+        android:layout_width="@dimen/textview_delivery_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/very_long_distance_margin_padding"
+        android:layout_toRightOf="@id/layout_del_time"
+        android:paddingLeft="@dimen/short_distance_margin_padding"
+        android:text="TUE"
+        android:textSize="@dimen/textsize_super_large"
+        android:textStyle="bold" />
+
+</RelativeLayout>

@@ -1,0 +1,8 @@
+.svn
+.classpath
+.project
+bin
+gen
+.settings
+.DS_Store
+proguard

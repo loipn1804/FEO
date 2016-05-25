@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Far East Orchid</string>
+    <!-- <string name="app_name">FEO Dev</string> -->
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Example action</string>
+    <string name="action_settings">Settings</string>
+    <string name="txt_please_wait">Please wait...</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="title_activity_image">ImageActivity</string>
+    <string name="title_activity_faq">FAQActivity</string>
+    <string name="title_activity_tc">TCActivity</string>
+    <string name="title_activity_about">AboutUsActivity</string>
+    <string name="title_activity_contact">ContactUsActivity</string>
+    <string name="title_activity_flower_detail">FlowerDetailActivity</string>
+    <string name="no_internet_connection">No internet connection</string>
+    <string name="aboutus1">Three Brothers founded Far East Flora Holdings since 1965. With a van, they peddled door-to-door, selling delicate flowers and eggs, and earning daily sales of $100. Though the returns were enough to sustain the family business, the brothers were on to bigger and bolder dreams.</string>
+    <string name="aboutus2">It was a few years later that the brothers decided to embark on the wholesale business of exporting orchids, which proved to be a success. And it was from here that the business expanded both locally and globally. Far East Orchid Pte Ltd, Fresh Cut Flowers Wholesale Department was established in 1976.</string>
+    <string name="aboutus3">Far East Flora Holdings operates wholesale floral centre(www.FarEastOrchid.com) along with other business units ranging from garden centre (www.FarEastFloraGarden.com), online florist (www.FarEastFlora.com), landscaping, interior plantscaping \u0026 plant rental (www.o2plants.com.sg) and has also expanded internationally to Hong Kong and Malaysia.</string>
+    <string name="aboutus4">Far East Orchid Pte Ltd launched its online wholesale floral centre in 2013.</string>
+    <string name="reverse_note">*Not inclusive of GST \u0026 Delivery charges.</string>
+    <string name="location">Location</string>
+    <string name="cant_read_folder">folder can\'t be read!</string>
+    <string name="nnew">New</string>
+    <string name="select">Select</string>
+    <string name="file_name">File name:</string>
+    <string name="cancel">Cancel</string>
+    <string name="create">Save</string>
+    <string name="no_data">No Data</string>
+    <string name="err">Error</string>
+    <string name="commons_sd_card_error_title">SD Card unavailable</string>
+    <string name="commons_sd_card_error_no_sd_message">No SD Card found.</string>
+    <string name="commons_sd_card_error_sd_unavailable">SD Card is not available.</string>    
+    <string name="err_connect">Server connection error!</string>
+    
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/FarEastOrchid/FarEastOrchid.iml" filepath="$PROJECT_DIR$/FarEastOrchid/FarEastOrchid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FarEastOrchid-Lib/FarEastOrchid-Lib.iml" filepath="$PROJECT_DIR$/FarEastOrchid-Lib/FarEastOrchid-Lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ParallaxScroll/ParallaxScroll.iml" filepath="$PROJECT_DIR$/ParallaxScroll/ParallaxScroll.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PullToRefresh/PullToRefresh.iml" filepath="$PROJECT_DIR$/PullToRefresh/PullToRefresh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SimpleToast/SimpleToast.iml" filepath="$PROJECT_DIR$/SimpleToast/SimpleToast.iml" />
+    </modules>
+  </component>
+</project>
+

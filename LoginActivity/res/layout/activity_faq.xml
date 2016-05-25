@@ -1,0 +1,440 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/AppScreenStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <include layout="@layout/view_header" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/average_distance_margin_padding"
+                android:gravity="left"
+                android:text="1) Is the range of products same as those on the website?"
+                android:textSize="@dimen/textsize_large"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/average_distance_margin_padding"
+                android:autoLink="web"
+                android:gravity="left"
+                android:text="The mobile app contains the exact same range of products as on www.fareastorchid.com and is updated throughout the day to make stock availability and promotional price changes seamless and easy for users."
+                android:textSize="@dimen/textsize_normal" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/average_distance_margin_padding"
+                android:gravity="left"
+                android:text="2) How often will the product range be updated?"
+                android:textSize="@dimen/textsize_large"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/average_distance_margin_padding"
+                android:gravity="left"
+                android:text="Contents in the mobile app will be updated as and when there are changes in products, prices, shipment dates occurring throughout the day."
+                android:textSize="@dimen/textsize_normal" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/average_distance_margin_padding"
+                android:gravity="left"
+                android:text="3) How can I provide feedback on mobile app?"
+                android:textSize="@dimen/textsize_large"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/average_distance_margin_padding"
+                android:autoLink="email"
+                android:gravity="left"
+                android:text="We will love to hear from you. Let us know if you have any comments or suggestions by emailing to mobile@fareastorchid.com."
+                android:textSize="@dimen/textsize_normal" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/average_distance_margin_padding"
+                android:gravity="left"
+                android:text="4) How do I ensure my orders are being confirmed?"
+                android:textSize="@dimen/textsize_large"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/average_distance_margin_padding"
+                android:gravity="left"
+                android:text="Our customer service officers will contact you as soon as possible after orders are retrieved by us."
+                android:textSize="@dimen/textsize_normal" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/average_distance_margin_padding"
+                android:gravity="left"
+                android:text="5) How do I order flowers that are not in the mobile app?"
+                android:textSize="@dimen/textsize_large"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/average_distance_margin_padding"
+                android:autoLink="email"
+                android:gravity="left"
+                android:text="You can contact us directly via our telephone hotline +65 6251 5151 or email us at mobile@fareastorchid.com  or via the comment box in the mobile app."
+                android:textSize="@dimen/textsize_normal" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/average_distance_margin_padding"
+                android:gravity="left"
+                android:text="6) Can I order flowers with add on requests? (example: half bloom/full bloom lily)"
+                android:textSize="@dimen/textsize_large"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/average_distance_margin_padding"
+                android:gravity="left"
+                android:text="Yes, after the item is selected, you can add remarks/requests on the item."
+                android:textSize="@dimen/textsize_normal" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/average_distance_margin_padding"
+                android:gravity="left"
+                android:text="7) Can I have special request for my delivery timing?"
+                android:textSize="@dimen/textsize_large"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/average_distance_margin_padding"
+                android:gravity="left"
+                android:text="Subject to the availability of the delivery schedule."
+                android:textSize="@dimen/textsize_normal" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/average_distance_margin_padding"
+                android:gravity="left"
+                android:text="8) When can I know the final charges of my confirm order?"
+                android:textSize="@dimen/textsize_large"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/average_distance_margin_padding"
+                android:gravity="left"
+                android:text="Our customer service officers will contact you and finalise the items and prices."
+                android:textSize="@dimen/textsize_normal" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/average_distance_margin_padding"
+                android:gravity="left"
+                android:text="9) Is there a minimum amount that I need to place for an order?"
+                android:textSize="@dimen/textsize_large"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/average_distance_margin_padding"
+                android:gravity="left"
+                android:text="a) Yes, The minimum amount is $100 for items ordered excluding delivery charges - GST."
+                android:textSize="@dimen/textsize_normal" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/average_distance_margin_padding"
+                android:gravity="left"
+                android:text="b) No, for self-collection items."
+                android:textSize="@dimen/textsize_normal" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/average_distance_margin_padding"
+                android:gravity="left"
+                android:text="10)  Can I place an order one month in advance via the app?"
+                android:textSize="@dimen/textsize_large"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/average_distance_margin_padding"
+                android:gravity="left"
+                android:text="Yes, upon placing an order, you will be required to input date of collection or delivery."
+                android:textSize="@dimen/textsize_normal" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/average_distance_margin_padding"
+                android:gravity="left"
+                android:text="11)  Can I make enquires on any items via the app?"
+                android:textSize="@dimen/textsize_large"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/average_distance_margin_padding"
+                android:gravity="left"
+                android:text="Yes."
+                android:textSize="@dimen/textsize_normal" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/average_distance_margin_padding"
+                android:gravity="left"
+                android:text="12) Will the items received be the same as those shown in the mobile app?"
+                android:textSize="@dimen/textsize_large"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/average_distance_margin_padding"
+                android:gravity="left"
+                android:text="Actual items may vary from the photos in the mobile app. Factors such as colours, bloom stage of flowers, size of items might be affected due to weather conditions, photography etc.."
+                android:textSize="@dimen/textsize_normal" />
+
+            <TextView
+                android:id="@+id/txtRetailOpen"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/average_distance_margin_padding"
+                android:gravity="left"
+                android:text="Retail Operating Hours"
+                android:textSize="@dimen/textsize_normal"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/average_distance_margin_padding"
+                android:gravity="left"
+                android:text="Mon – Sat: 8.00 am - 9.00 pm"
+                android:textSize="@dimen/textsize_normal" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/average_distance_margin_padding"
+                android:gravity="left"
+                android:text="Sun and Public Holidays: 9.00 am - 7.00 pm"
+                android:textSize="@dimen/textsize_normal" />
+
+            <TextView
+                android:id="@+id/txtOfficeOpen"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/average_distance_margin_padding"
+                android:gravity="left"
+                android:text="Office Operating Hours"
+                android:textSize="@dimen/textsize_normal"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/average_distance_margin_padding"
+                android:gravity="left"
+                android:text="7.30 am - 2.00 pm (Daily)"
+                android:textSize="@dimen/textsize_normal" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/average_distance_margin_padding"
+                android:gravity="left"
+                android:text="Closed on Sunday and Public Holidays"
+                android:textSize="@dimen/textsize_normal" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/average_distance_margin_padding"
+                android:gravity="center"
+                android:text="How to keep cut flowers fresh?"
+                android:textSize="@dimen/textsize_super_large" />
+
+            <View style="@style/hor_lightgray_devider" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/average_distance_margin_padding"
+                android:gravity="left"
+                android:text="Keep flowers out of direct sunlight."
+                android:textSize="@dimen/textsize_normal" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/short_distance_margin_padding"
+                android:gravity="left"
+                android:text="Remove leaves that will be under water in the arrangement."
+                android:textSize="@dimen/textsize_normal" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/short_distance_margin_padding"
+                android:gravity="left"
+                android:text="Add Chrysal Flower Food in the water."
+                android:textSize="@dimen/textsize_normal" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/short_distance_margin_padding"
+                android:gravity="left"
+                android:text="Cut stems at a slant with a sharp knife/scissors and plunged immediately into water to prevent air bubbles."
+                android:textSize="@dimen/textsize_normal" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/short_distance_margin_padding"
+                android:gravity="left"
+                android:text="Display at room temperature and avoid direct sunlight, warm or humid environment."
+                android:textSize="@dimen/textsize_normal" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/short_distance_margin_padding"
+                android:gravity="left"
+                android:text="Change the water every day."
+                android:textSize="@dimen/textsize_normal" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/short_distance_margin_padding"
+                android:gravity="left"
+                android:text="Repeat until flowers are discarded."
+                android:textSize="@dimen/textsize_normal" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/average_distance_margin_padding"
+                android:gravity="center"
+                android:text="Guidelines"
+                android:textSize="@dimen/textsize_super_large" />
+
+            <View style="@style/hor_lightgray_devider" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/average_distance_margin_padding"
+                android:gravity="left"
+                android:text="The following types of flowers need time to bloom before actual day of use."
+                android:textSize="@dimen/textsize_normal" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/short_distance_margin_padding"
+                android:gravity="left"
+                android:text=" Lily Longiflorum (approx. 5-7 days)"
+                android:textSize="@dimen/textsize_normal" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/short_distance_margin_padding"
+                android:gravity="left"
+                android:text=" Lily Oriental Pink (approx. 3-5 days)"
+                android:textSize="@dimen/textsize_normal" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/short_distance_margin_padding"
+                android:gravity="left"
+                android:text=" Freesia (approx. 2-3 days)"
+                android:textSize="@dimen/textsize_normal" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/short_distance_margin_padding"
+                android:gravity="left"
+                android:text=" Carnation (approx. 3-5 days)"
+                android:textSize="@dimen/textsize_normal" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/short_distance_margin_padding"
+                android:gravity="left"
+                android:text=" Alstromeria (approx. 2-3 days)"
+                android:textSize="@dimen/textsize_normal" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/short_distance_margin_padding"
+                android:gravity="left"
+                android:text=" Gladiolus (approx. 2-3 days)"
+                android:textSize="@dimen/textsize_normal" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/short_distance_margin_padding"
+                android:gravity="left"
+                android:text=" Amaryllis (approx. 2-3 days)"
+                android:textSize="@dimen/textsize_normal" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/short_distance_margin_padding"
+                android:gravity="left"
+                android:text=" Sunflower (approx. 1-3 days)"
+                android:textSize="@dimen/textsize_normal" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

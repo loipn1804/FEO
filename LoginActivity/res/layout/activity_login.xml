@@ -1,0 +1,153 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootview"
+    style="@style/AppScreenStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity" >
+
+    <ScrollView
+        android:id="@+id/login_form"
+        style="@style/AppScreenStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            style="@style/LoginFormContainer"
+            android:layout_width="match_parent"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="@dimen/max_distance_margin_padding" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/very_long_distance_margin_padding"
+                android:padding="@dimen/average_distance_margin_padding"
+                android:src="@drawable/feo_ios_login_logo" />
+
+            <EditText
+                android:id="@+id/username"
+                style="@style/EdittextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/login_padding"
+                android:background="@drawable/feo_ios_edt_rect"
+                android:hint="@string/prompt_username"
+                android:maxLines="1"
+                android:minHeight="@dimen/icon_height"
+                android:singleLine="true" />
+
+            <EditText
+                android:id="@+id/password"
+                style="@style/EdittextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/average_distance_margin_padding"
+                android:background="@drawable/feo_ios_edt_rect"
+                android:hint="@string/prompt_password"
+                android:imeActionId="@+id/login"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeOptions="actionUnspecified"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:minHeight="@dimen/icon_height"
+                android:singleLine="true" />
+
+            <LinearLayout
+                android:id="@+id/lnlBlockBottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/login_imv_forgot_pwd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="@dimen/short_distance_margin_padding"
+                    android:text="Forgot password"
+                    android:textColor="@color/button_orange"
+                    android:textSize="20sp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/average_distance_margin_padding" >
+
+                    <com.joooonho.SelectableRoundedImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/login_imb_login"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/icon_height"
+                        android:scaleType="fitXY"
+                        android:src="#ffbe00"
+                        app:sriv_left_bottom_corner_radius="10dip"
+                        app:sriv_left_top_corner_radius="10dip"
+                        app:sriv_right_bottom_corner_radius="10dip"
+                        app:sriv_right_top_corner_radius="10dip" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="Sign in"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/short_distance_margin_padding"
+                    android:gravity="center"
+                    android:text="or"
+                    android:textColor="#7a7a7a"
+                    android:textSize="16sp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <com.joooonho.SelectableRoundedImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/login_imb_signup"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/icon_height"
+                        android:scaleType="fitXY"
+                        android:src="#fb9032"
+                        app:sriv_left_bottom_corner_radius="10dip"
+                        app:sriv_left_top_corner_radius="10dip"
+                        app:sriv_right_bottom_corner_radius="10dip"
+                        app:sriv_right_top_corner_radius="10dip" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="Register Now"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/login_imv_login_later"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="@dimen/short_distance_margin_padding"
+                    android:padding="@dimen/short_distance_margin_padding"
+                    android:text="I&apos;ll do this later"
+                    android:textColor="@color/button_orange"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Login progress -->
+
+    <include layout="@layout/view_progressbar" />
+
+    <!-- Login form -->
+
+</RelativeLayout>

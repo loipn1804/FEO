@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/hiddenPanel"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@null">
+
+    <ImageView
+        android:id="@+id/blur_iv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@null" />
+
+    <LinearLayout
+        android:id="@+id/panel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/panel_title"
+            android:gravity="center"
+            android:text="Filter by Colours"
+            android:textColor="@color/gray_text" />
+
+        <View style="@style/hor_lightgray_devider" />
+
+        <ListView
+            android:id="@+id/lv_color"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/gray"
+            android:dividerHeight="1dp"></ListView>
+    </LinearLayout>
+
+</RelativeLayout>

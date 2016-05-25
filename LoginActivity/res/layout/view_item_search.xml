@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/search_item_cover"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/feo_ios_listview_bg"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="@dimen/short_distance_margin_padding" >
+
+    <ImageView
+        android:id="@+id/search_item_img"
+        android:layout_width="@dimen/item_search_iv"
+        android:layout_height="@dimen/item_search_iv"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/average_distance_margin_padding"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/search_item_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/short_distance_margin_padding"
+            android:fontFamily="sans-serif-light"
+            android:gravity="left"
+            android:maxLines="2"
+            android:textSize="@dimen/context_text_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_margin="@dimen/very_short_distance_margin_padding"
+            android:layout_weight="1"
+            android:gravity="right|bottom"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/Text_Title_Style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:paddingRight="2dp"
+                android:text="Unit Price "
+                android:textColor="@color/gray_text"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/search_item_price"
+                style="@style/Text_Title_Style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="S$ 0.00"
+                android:textColor="#ff3c00" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

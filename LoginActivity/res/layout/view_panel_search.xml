@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/hiddenPanel"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@null">
+
+    <ImageView
+        android:id="@+id/blur_iv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@null" />
+
+    <LinearLayout
+        android:id="@+id/panel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/pabel_margin_top"
+        android:background="#f8f1dd"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/search_name"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/panel_iv_w"
+            android:gravity="center"
+            android:text="Item Name"
+            android:textColor="@color/gray_text" />
+
+        <View style="@style/hor_lightgray_devider" />
+
+        <TextView
+            android:id="@+id/search_code"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/panel_iv_w"
+            android:gravity="center"
+            android:text="Item Code"
+            android:textColor="@color/gray_text" />
+    </LinearLayout>
+
+</RelativeLayout>

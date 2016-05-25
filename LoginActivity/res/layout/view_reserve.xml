@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_delivery_time"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/reserveTitle"
+        layout="@layout/view_header" />
+
+    <LinearLayout
+        android:id="@+id/reserve_add_time"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/order_detail_time_address_h"
+        android:layout_below="@id/reserveTitle"
+        android:layout_margin="@dimen/short_distance_margin_padding"
+        android:background="#ffbe00"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/reserve_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/short_distance_margin_padding"
+            android:layout_marginRight="@dimen/short_distance_margin_padding"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/rounded_arrow"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="Delivery Address" />
+
+        <View style="@style/ver_lightgray_devider" />
+
+        <TextView
+            android:id="@+id/reserve_timeslot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/short_distance_margin_padding"
+            android:layout_marginRight="@dimen/short_distance_margin_padding"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/rounded_arrow"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="Delivery Time" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/reserveTotalLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/header_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/lnlReserveTotalLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/long_short_distance_margin_padding"
+                    android:layout_marginRight="@dimen/long_short_distance_margin_padding"
+                    android:layout_marginTop="@dimen/short_distance_margin_padding"
+                    android:text="Estimated total:"
+                    android:textSize="@dimen/textsize_larger"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/reserve_total"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/long_short_distance_margin_padding"
+                    android:layout_marginRight="@dimen/long_short_distance_margin_padding"
+                    android:layout_marginTop="@dimen/short_distance_margin_padding"
+                    android:gravity="right"
+                    android:text="S$ 0.00"
+                    android:textSize="@dimen/textsize_larger"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            
+
+            <RelativeLayout
+                android:id="@+id/reserve_rl_check"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/long_short_distance_margin_padding"
+                android:layout_marginRight="@dimen/long_short_distance_margin_padding" >
+
+                <CheckBox
+                    android:id="@+id/cbTotal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/short_distance_margin_padding"
+                    android:button="@drawable/checkbox_selector" />
+
+                <TextView
+                    android:id="@+id/tvNote"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/short_distance_margin_padding"
+                    android:layout_toRightOf="@id/cbTotal"
+                    android:text="Orders placed are NOT CONFIRMED, prices are subject to change without prior notice. Our customer service officer will contact you as soon as possible via phone.(During office hour)"
+                    android:textSize="@dimen/textsize_small" />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvNote"
+                    android:gravity="right"
+                    android:text="@string/reverse_note"
+                    android:textSize="@dimen/textsize_small" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/reserve_confirm_order"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/long_short_distance_margin_padding"
+                android:background="@drawable/reserve_send_order" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_remark"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/reserveTotalLayout"
+        android:background="#EFE4BE" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/short_distance_margin_padding"
+            android:layout_marginLeft="@dimen/average_distance_margin_padding"
+            android:layout_marginRight="@dimen/average_distance_margin_padding"
+            android:layout_marginTop="@dimen/short_distance_margin_padding"
+            android:background="@drawable/bg_edt_remark_2"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/average_distance_margin_padding"
+                android:text="Remarks:"
+                android:textSize="@dimen/textsize_large" />
+
+            <EditText
+                android:id="@+id/edt_remark"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/average_distance_margin_padding"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ellipsize="end"
+                android:gravity="left|center_vertical"
+                android:hint="Optional"
+                android:maxLines="5"
+                android:singleLine="false"
+                android:textSize="@dimen/textsize_large" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvReserve"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/layout_remark"
+        android:layout_below="@+id/reserve_add_time"
+        android:layout_margin="@dimen/short_distance_margin_padding"
+        android:listSelector="@null" >
+    </ListView>
+
+    <include layout="@layout/view_progressbar" />
+
+</RelativeLayout>

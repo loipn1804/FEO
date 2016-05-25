@@ -1,0 +1,112 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/AppScreenStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/search_header"
+        layout="@layout/view_header" />
+
+    <LinearLayout
+        android:id="@+id/layout_edtSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/search_header"
+        android:layout_margin="@dimen/short_distance_margin_padding"
+        android:background="@drawable/feo_ios_edt_rect"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/short_distance_margin_padding" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/feo_ios_search_search_grey" />
+
+        <EditText
+            android:id="@+id/edtSearch"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/short_distance_margin_padding"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:ellipsize="start"
+            android:fontFamily="sans-serif-light"
+            android:hint="Search for product name or code"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/tvType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/short_distance_margin_padding"
+            android:drawableRight="@drawable/rounded_arrow"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="Name"
+            android:textColor="@color/orage_light"
+            android:textStyle="normal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_edtSearch"
+        android:layout_marginTop="@dimen/short_distance_margin_padding"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ProgressBar
+                android:id="@+id/progressbar"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:indeterminateDrawable="@drawable/loader"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/searchTotal"
+                style="@style/Text_Title_Style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="0 results found"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <View
+            style="@style/hor_lightgray_devider"
+            android:layout_marginLeft="@dimen/short_distance_margin_padding"
+            android:layout_marginRight="@dimen/short_distance_margin_padding" />
+
+        <GridView
+            android:id="@+id/gvSearch"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/average_distance_margin_padding"
+            android:background="@null"
+            android:gravity="center"
+            android:numColumns="2"
+            android:scrollbars="vertical"
+            android:stretchMode="columnWidth" >
+        </GridView>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/search_grey"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#88888888" />
+
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/del_header"
+        layout="@layout/view_header" />
+
+    <TextView
+        android:id="@+id/tvDelivery"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/del_header"
+        android:gravity="center_horizontal"
+        android:paddingTop="@dimen/delivery_time_padding_t"
+        android:text="Select Delivery Address"
+        android:textSize="@dimen/textsize_larger" />
+
+    <LinearLayout
+        android:id="@+id/reserveTotalLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/header_bg"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <!-- <RelativeLayout -->
+        <!-- android:layout_width="fill_parent" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_margin="@dimen/long_short_distance_margin_padding" > -->
+
+
+        <!-- <CheckBox -->
+        <!-- android:id="@+id/cbTerm" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_centerVertical="true" -->
+        <!-- android:layout_marginTop="@dimen/short_distance_margin_padding" -->
+        <!-- android:button="@drawable/checkbox_selector" /> -->
+
+
+        <!-- <TextView -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_centerVertical="true" -->
+        <!-- android:layout_marginTop="@dimen/short_distance_margin_padding" -->
+        <!-- android:layout_toRightOf="@id/cbTerm" -->
+        <!-- android:text="Apply this address for the entire order" -->
+        <!-- android:textSize="12sp" /> -->
+        <!-- </RelativeLayout> -->
+
+        <ImageView
+            android:id="@+id/delivery_confirm"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/long_short_distance_margin_padding"
+            android:background="@drawable/confirm_delivery_adds" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvCurrentAddress"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/reserveTotalLayout"
+        android:layout_below="@id/tvDelivery"
+        android:layout_marginLeft="@dimen/long_short_distance_margin_padding"
+        android:layout_marginRight="@dimen/long_short_distance_margin_padding"
+        android:layout_marginTop="@dimen/long_short_distance_margin_padding"
+        android:divider="@null"
+        android:scrollbars="none"></ListView>
+
+    <include layout="@layout/view_progressbar" />
+
+</RelativeLayout>

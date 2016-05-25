@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_delivery_time" >
+
+    <include
+        android:id="@+id/rlTitle"
+        layout="@layout/view_header" />
+
+    <RelativeLayout
+        android:id="@+id/addAlltoCart"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rlTitle"
+        android:layout_margin="@dimen/short_distance_margin_padding" >
+
+        <ImageView
+            android:id="@+id/ivAddtoCart"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/order_detail_iv"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/add_all_to_cart" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/order_detail_time_address"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/order_detail_time_address_h"
+        android:layout_below="@id/addAlltoCart"
+        android:layout_margin="@dimen/short_distance_margin_padding"
+        android:background="#ffbe00"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/order_detail_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/short_distance_margin_padding"
+            android:layout_marginRight="@dimen/short_distance_margin_padding"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="Delivery Address" />
+
+        <View style="@style/ver_lightgray_devider" />
+
+        <TextView
+            android:id="@+id/order_detail_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/short_distance_margin_padding"
+            android:layout_marginRight="@dimen/short_distance_margin_padding"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="Delivery Time" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/orderHistoryTotalLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/orage_light"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/layout_remark"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/reserveTotalLayout"
+            android:background="#EFE4BE"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/short_distance_margin_padding"
+                android:layout_marginLeft="@dimen/average_distance_margin_padding"
+                android:layout_marginRight="@dimen/average_distance_margin_padding"
+                android:layout_marginTop="@dimen/short_distance_margin_padding"
+                android:layout_weight="1"
+                android:background="@drawable/bg_edt_remark_2"
+                android:descendantFocusability="beforeDescendants"
+                android:focusableInTouchMode="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/average_distance_margin_padding"
+                    android:text="Remarks:"
+                    android:textSize="@dimen/textsize_large" />
+
+                <EditText
+                    android:id="@+id/edt_remark"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/average_distance_margin_padding"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="left|center_vertical"
+                    android:hint=""
+                    android:maxLines="5"
+                    android:singleLine="false"
+                    android:enabled="false"
+                    android:textSize="@dimen/textsize_large" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtUpdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingRight="5dp"
+                android:text="Update"
+                android:textSize="@dimen/textsize_large"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/long_short_distance_margin_padding"
+                android:layout_marginRight="@dimen/long_short_distance_margin_padding"
+                android:layout_marginTop="@dimen/short_distance_margin_padding"
+                android:text="Estimated total: "
+                android:textSize="@dimen/textsize_larger" />
+
+            <TextView
+                android:id="@+id/orderHistory_subTotal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/long_short_distance_margin_padding"
+                android:layout_marginRight="@dimen/long_short_distance_margin_padding"
+                android:layout_marginTop="@dimen/short_distance_margin_padding"
+                android:gravity="right"
+                android:text="S$ 0.00"
+                android:textSize="@dimen/textsize_larger" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.1dp"
+            android:layout_marginLeft="@dimen/long_short_distance_margin_padding"
+            android:layout_marginRight="@dimen/long_short_distance_margin_padding"
+            android:background="@drawable/feo_ios_side_menu_side_menu_divider" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/long_short_distance_margin_padding"
+            android:layout_marginRight="@dimen/long_short_distance_margin_padding"
+            android:text="*Not inclusive of GST &amp; Delivery charges" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lvOrderHistoryDetail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/orderHistoryTotalLayout"
+        android:layout_below="@id/order_detail_time_address"
+        android:listSelector="@android:color/transparent" >
+    </ListView>
+
+    <include layout="@layout/view_progressbar" />
+
+</RelativeLayout>
